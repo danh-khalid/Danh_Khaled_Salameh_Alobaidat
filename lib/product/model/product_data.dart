@@ -29,7 +29,8 @@ const List<Product> products = [
     brand: 'SoundMax',
     category: 'Electronics',
     inStock: true,
-    description: 'Comfortable wireless headphones with clear sound and long battery life.',
+    description:
+        'Comfortable wireless headphones with clear sound and long battery life.',
     image: 'assets/images/wireless_headphones.png',
   ),
 
@@ -39,7 +40,8 @@ const List<Product> products = [
     brand: 'TechTime',
     category: 'Wearables',
     inStock: true,
-    description: 'A modern smart watch for notifications, activity tracking, and daily use.',
+    description:
+        'A modern smart watch for notifications, activity tracking, and daily use.',
     image: 'assets/images/smart_watch.png',
   ),
 

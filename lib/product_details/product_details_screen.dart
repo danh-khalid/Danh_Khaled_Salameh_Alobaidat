@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
-import '../product/product_model.dart';
+import '../product/model/product_model.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   final Product product;

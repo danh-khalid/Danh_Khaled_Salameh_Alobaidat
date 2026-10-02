@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../routes/app_routes.dart';
-import '../utils/app_colors.dart';
-import 'product_data.dart';
-import 'product_model.dart';
+import '../../routes/app_routes.dart';
+import '../../utils/app_colors.dart';
+import '../model/product_data.dart';
+import '../model/product_model.dart';
 
 class ProductGridScreen extends StatelessWidget {
   const ProductGridScreen({super.key});

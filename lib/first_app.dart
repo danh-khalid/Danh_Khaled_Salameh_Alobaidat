@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'login/login_screen.dart';
-import 'login/forgot_password_screen.dart';
-import 'product/product_grid_screen.dart';
-import 'product/product_list_screen.dart';
-import 'product/product_data.dart';
-import 'product/product_model.dart';
+import 'forgot_password/forgot_password_screen.dart';
+import 'product/view/product_grid_screen.dart';
+import 'product/view/product_list_screen.dart';
+import 'product/model/product_model.dart';
 import 'product_details/product_details_screen.dart';
 import 'routes/app_routes.dart';
+import 'utils/theme/theme.dart';
 
 class FirstApp extends StatelessWidget {
   const FirstApp({super.key});
@@ -19,39 +19,7 @@ class FirstApp extends StatelessWidget {
 
       title: 'ShopApp',
 
-      theme: ThemeData(
-        useMaterial3: true,
-
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1976D2)),
-
-        scaffoldBackgroundColor: const Color(0xFFF8FAFD),
-
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF1976D2),
-          foregroundColor: Colors.white,
-          centerTitle: false,
-        ),
-
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.white,
-
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: Color(0xFFD8DFEA)),
-          ),
-
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: Color(0xFFD8DFEA)),
-          ),
-
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: Color(0xFF1976D2), width: 1.5),
-          ),
-        ),
-      ),
+      theme: appTheme,
 
       initialRoute: AppRoutes.login,
 
